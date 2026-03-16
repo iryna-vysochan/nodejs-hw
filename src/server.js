@@ -11,6 +11,9 @@ app.use(express.json());
 app.use(cors());
 app.use(pino({ level: 'info' }));
 
+app.get('/', (req, res) => {
+  res.json({ message: 'API is working' });
+});
 
 app.get('/notes', (req, res) => {
   res.status(200).json({ message: 'Retrieved all notes' });
