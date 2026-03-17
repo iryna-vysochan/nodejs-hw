@@ -8,7 +8,7 @@ import jwt from 'jsonwebtoken';
 import { createSession } from '../services/auth.js';
 import { Session } from '../models/session.js';
 import { setSessionCookies } from '../services/auth.js';
-import { sendEmail } from '../../utils/sendMail.js';
+import { sendEmail } from '../utils/sendMail.js';
 import handlebars from 'handlebars';
 import path from 'node:path';
 import fs from 'node:fs/promises';
